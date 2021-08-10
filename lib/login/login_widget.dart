@@ -44,16 +44,22 @@ class _LoginWidgetState extends State<LoginWidget> {
             Row(
               mainAxisSize: MainAxisSize.max,
               children: [
-                Container(
-                  width: MediaQuery.of(context).size.width,
-                  height: 200,
-                  decoration: BoxDecoration(
-                    color: FlutterFlowTheme.primaryColor,
-                    image: DecorationImage(
-                      fit: BoxFit.fitWidth,
-                      image: Image.asset(
-                        'assets/images/topSection@2x.png',
-                      ).image,
+                Align(
+                  alignment: Alignment(0, -0.1),
+                  child: Padding(
+                    padding: EdgeInsets.fromLTRB(0, 100, 0, 100),
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      height: 100,
+                      decoration: BoxDecoration(
+                        color: FlutterFlowTheme.primaryColor,
+                        image: DecorationImage(
+                          fit: BoxFit.fitHeight,
+                          image: Image.asset(
+                            'assets/images/logos-thumb-1.png',
+                          ).image,
+                        ),
+                      ),
                     ),
                   ),
                 )

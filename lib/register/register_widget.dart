@@ -47,16 +47,19 @@ class _RegisterWidgetState extends State<RegisterWidget> {
           Row(
             mainAxisSize: MainAxisSize.max,
             children: [
-              Container(
-                width: MediaQuery.of(context).size.width,
-                height: 200,
-                decoration: BoxDecoration(
-                  color: FlutterFlowTheme.primaryColor,
-                  image: DecorationImage(
-                    fit: BoxFit.fitWidth,
-                    image: Image.asset(
-                      'assets/images/topSection@2x.png',
-                    ).image,
+              Padding(
+                padding: EdgeInsets.fromLTRB(90, 100, 100, 80),
+                child: Container(
+                  width: MediaQuery.of(context).size.width * 0.5,
+                  height: 100,
+                  decoration: BoxDecoration(
+                    color: FlutterFlowTheme.primaryColor,
+                    image: DecorationImage(
+                      fit: BoxFit.scaleDown,
+                      image: Image.asset(
+                        'assets/images/logos-thumb-1.png',
+                      ).image,
+                    ),
                   ),
                 ),
               )
