@@ -39,7 +39,7 @@ class _MyAppState extends State<MyApp> {
           ? Center(
               child: Builder(
                 builder: (context) => Image.asset(
-                  'assets/images/todo_0.0_Splash@3x.png',
+                  'assets/images/pixite-thumb.png',
                   width: MediaQuery.of(context).size.width / 2,
                   fit: BoxFit.fitWidth,
                 ),
@@ -88,22 +88,12 @@ class _NavBarPageState extends State<NavBarPage> {
               color: Color(0xFF9E9E9E),
               size: 32,
             ),
-            activeIcon: Icon(
-              Icons.playlist_add,
-              color: FlutterFlowTheme.primaryColor,
-              size: 32,
-            ),
             label: 'My Tasks',
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.alarm_on,
               color: Color(0xFF9E9E9E),
-              size: 32,
-            ),
-            activeIcon: Icon(
-              Icons.alarm_on,
-              color: FlutterFlowTheme.primaryColor,
               size: 32,
             ),
             label: 'Completed',
@@ -122,10 +112,10 @@ class _NavBarPageState extends State<NavBarPage> {
             label: 'Home',
           )
         ],
-        backgroundColor: FlutterFlowTheme.primaryBlack,
+        backgroundColor: Color(0xFFA13636),
         currentIndex: tabs.keys.toList().indexOf(_currentPage),
-        selectedItemColor: FlutterFlowTheme.primaryColor,
-        unselectedItemColor: FlutterFlowTheme.tertiaryColor,
+        selectedItemColor: FlutterFlowTheme.grayBG,
+        unselectedItemColor: FlutterFlowTheme.white,
         onTap: (i) => setState(() => _currentPage = tabs.keys.toList()[i]),
         showSelectedLabels: true,
         showUnselectedLabels: true,

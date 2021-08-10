@@ -3,13 +3,13 @@ import 'package:google_fonts/google_fonts.dart';
 
 // ignore: avoid_classes_with_only_static_members
 class FlutterFlowTheme {
-  static const Color primaryColor = Color(0xFF42BEA5);
-  static const Color secondaryColor = Color(0xFF359F8A);
-  static const Color tertiaryColor = Color(0xFF95A1AC);
+  static const Color primaryColor = Color(0xFFA13636);
+  static const Color secondaryColor = Color(0xFF000000);
+  static const Color tertiaryColor = Color(0xFF000000);
 
   static const Color white = Color(0xFFFFFFFF);
-  static const Color grayBG = Color(0xFFDBE2E7);
-  static const Color darkBG = Color(0xFF1A1F24);
+  static const Color grayBG = Color(0xFF000000);
+  static const Color darkBG = Color(0xFF000000);
   static const Color primaryBlack = Color(0xFF131619);
 
   String primaryFontFamily = 'Poppins';

@@ -64,10 +64,10 @@ class _CompletedTasksWidgetState extends State<CompletedTasksWidget> {
               mainAxisSize: MainAxisSize.max,
               children: [
                 Image.asset(
-                  'assets/images/waves@2x.png',
+                  'assets/images/localbooth-thumb.png',
                   width: MediaQuery.of(context).size.width,
                   height: 56,
-                  fit: BoxFit.cover,
+                  fit: BoxFit.scaleDown,
                 )
               ],
             ),
@@ -95,7 +95,7 @@ class _CompletedTasksWidgetState extends State<CompletedTasksWidget> {
                                   width: 50,
                                   height: 50,
                                   child: CircularProgressIndicator(
-                                    color: FlutterFlowTheme.primaryColor,
+                                    color: Colors.white,
                                   ),
                                 ),
                               );

@@ -75,9 +75,9 @@ class _MyTasksWidgetState extends State<MyTasksWidget> {
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.darkBG,
                     image: DecorationImage(
-                      fit: BoxFit.fitWidth,
+                      fit: BoxFit.scaleDown,
                       image: Image.asset(
-                        'assets/images/waves@2x.png',
+                        'assets/images/localbooth-thumb.png',
                       ).image,
                     ),
                   ),
@@ -119,7 +119,7 @@ class _MyTasksWidgetState extends State<MyTasksWidget> {
                                 width: 50,
                                 height: 50,
                                 child: CircularProgressIndicator(
-                                  color: FlutterFlowTheme.primaryColor,
+                                  color: Colors.white,
                                 ),
                               ),
                             );

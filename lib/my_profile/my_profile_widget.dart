@@ -39,7 +39,7 @@ class _MyProfileWidgetState extends State<MyProfileWidget> {
               width: 50,
               height: 50,
               child: CircularProgressIndicator(
-                color: FlutterFlowTheme.primaryColor,
+                color: Colors.white,
               ),
             ),
           );
@@ -259,7 +259,7 @@ class _MyProfileWidgetState extends State<MyProfileWidget> {
                               ),
                             ),
                             Text(
-                              'App Version v0.0',
+                              'App Version v0.1',
                               textAlign: TextAlign.center,
                               style: FlutterFlowTheme.bodyText2.override(
                                 fontFamily: 'Lexend Deca',

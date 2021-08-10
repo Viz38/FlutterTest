@@ -37,7 +37,7 @@ class _TaskDetailsWidgetState extends State<TaskDetailsWidget> {
               width: 50,
               height: 50,
               child: CircularProgressIndicator(
-                color: FlutterFlowTheme.primaryColor,
+                color: Colors.white,
               ),
             ),
           );
@@ -152,8 +152,7 @@ class _TaskDetailsWidgetState extends State<TaskDetailsWidget> {
                                               width: 50,
                                               height: 50,
                                               child: CircularProgressIndicator(
-                                                color: FlutterFlowTheme
-                                                    .primaryColor,
+                                                color: Colors.white,
                                               ),
                                             ),
                                           );
